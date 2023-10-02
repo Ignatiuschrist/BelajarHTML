@@ -1,0 +1,21 @@
+h5 {
+    color: mediumblue;
+}
+
+h2 {
+    color: #000000;
+}
+
+h3 {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+h4 {
+    color: hsl(237, 87%, 15%)
+}
+
+h1 {
+    background: linear-gradient(90deg, rgba(176,19,185,1) 8%, rgba(9,9,121,1) 30%, rgba(0,212,255,1) 59%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

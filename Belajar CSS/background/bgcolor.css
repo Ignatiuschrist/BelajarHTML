@@ -1,0 +1,9 @@
+body {
+    background-color: lightgray;
+}
+
+header h2 {
+    background-color: blueviolet;
+    display: inline-block;
+}
+

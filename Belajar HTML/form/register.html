@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+</head>
+<body>
+    <form action="register,php" method="post">
+
+            <legend>Register</legend>
+
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username . . ." required autofocus>
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="Email . . ." required autofocus>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Password . . ." required autofocus>
+            </div>
+            <div>
+                <label for="jenis_kelamin">Jenis Kelamin</label>
+                <label><input type="radio" name="jenis_kelamin" value="Laki-laki"> Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan</label>
+            </div>
+            <div>
+                <label for="agama">Agama</label>
+                <select name="agama" id="agama">
+                    <option value="">Pilih agama</option>
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katholik">Katholik</option>
+                    <option value="budha">Budha</option>
+                    <option value="hindu">Hindu</option>
+                </select>
+            </div>
+
+            <div>
+            <label for="biografi">Biografi</label>
+            <textarea name="biografi" id="biografi" cols="30" rows="10" placeholder="Biografi ..."></textarea>
+            </div>
+
+            <div>
+                <label for="hobi">Hobi</label>
+                <label><input type="checkbox" name="hobi" id="hobi" value="Sepak Bola"> Sepak Bola</label>
+                <label><input type="checkbox" name="hobi" id="hobi" value="Mancing"> Mancing</label>
+                <label><input type="checkbox" name="hobi" id="hobi" value="Balap"> Balap</label>
+            </div>
+
+            <div>
+                <input type="submit" value="Daftar">
+            </div>
+    
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
