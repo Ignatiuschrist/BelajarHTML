@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan IF ELSE</title>
+</head>
+<body>
+    <script>
+        var kasir = prompt('Total Belanja? ', 0)
+
+        if(kasir > 200000) {
+            document.write('<h1>Selamat anda dapat diskon 70%</h1>')
+        } else if(kasir > 100000) {
+            document.write('<h1>Selamat anda dapat diskon 50%</h1>')
+        } else if(kasir > 50000) {
+            document.write('<h1>Selamat anda dapat diskon 20%</h1>')
+        }
+         else{
+            document.write('<h1>Yah anda tidak dapat diskon</h1>')
+        }
+
+        document.write('Terimakasih telah berbelanja, semoga datang kembali')
+    </script>
+</body>
+</html>

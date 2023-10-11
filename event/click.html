@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasar Event</title>
+</head>
+<body>
+    <button type="button" onclick="hello()">Hello</button>
+    <button type="button" id="HelloEvent">Hello Add Event Listener</button>
+    <button type="button" id="click">Click 2x</button>
+
+    <script>
+        function hello() {
+            alert('Hello')
+        }
+
+        var button = document.getElementById('helloevent')
+        button.addEventListener('click', function() {
+            alert('Hello Add Event Listener')
+        })
+
+        var dblClick = document.getElementById('helloevent')
+        dblClick.addEventListener('dblclick', function() {
+            alert('Hello Double Click')
+        })
+    </script>
+</body>
+</html>

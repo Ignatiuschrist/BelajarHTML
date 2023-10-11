@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard Event</title>
+</head>
+<body>
+    <h1 id="keydown"></h1>
+    <h1 id="keypress"></h1>
+    <h1 id="keyup"></h1>
+
+    <script>
+        var keydown = document.getElementById('keydown')
+        var keypress = document.getElementById('keypress')
+        var keyup = document.getElementById('keyup')
+
+        document.addEventListener('keydown', function(e) {
+            keydown.innerText = 'Menekan : ' + e.key
+        })
+
+        document.addEventListener('keypress', function(e) {
+            keypress.innerText = 'Menahan : ' + e.key
+        })
+
+        document.addEventListener('keyup', function(e) {
+            keyup.innerText = 'Melepas : ' + e.key
+        })
+    </script>
+</body>
+</html>
+
+
+<!-- 1.Keypress : Event saat kita menahan tombol keyboard
+2.Keyup : Event saat kita berhasil menekan tombol tertentu
+3.keydown : Event saat kita mulai menekan tombol tertentu -->
+
+
+<!-- 1.Change
+2.Event pada Form
+3. Custom Event -->

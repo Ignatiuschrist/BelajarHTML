@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Event</title>
+</head>
+<body>
+    <button id="btnEnter">Mouse Enter</button>
+    <button id="btnHover">Mouse Hover</button>
+    <button id="btnOut">Mouse Out</button>
+
+    <p id="text">Ini Belum Ngapa-Ngapain</p>
+
+    <script>
+        var btnEnter = document.getElementById('btnEnter')
+        var btnHover = document.getElementById('btnHover')
+        var btnOut = document.getElementById('btnOut')
+        var text = document.getElementById('text')
+
+        btnEnter.addEventListener('mouseenter', function(e){
+            text.innerText = "Mouse Sudah Masuk"
+        })
+
+        btnHover.addEventListener('mouseover', function(e){
+            text.innerText = "Mouse Over Udah"
+        })
+
+        btnOut.addEventListener('mouseout', function(e){
+            text.innerText = "Mouse Out Udah Kelar"
+        })
+    </script>
+</body>
+</html>
+
+
+<!-- 1. On Mouse Over
+2. Mouse Enter
+3. Mouse Out -->
